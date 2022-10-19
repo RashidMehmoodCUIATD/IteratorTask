@@ -23,9 +23,9 @@ public class OrganizationAgeIterator {
         while (employees.get(iteratorIndex).Age<36)
         {iteratorIndex++;}}
     public boolean isDone(){
-        if(iteratorIndex>employees.size()){
-            return true;}
-        else {return  false;}
+        if(iteratorIndex<employees.size()-1){
+            return false;}
+        else {return  true;}
 
 
     }

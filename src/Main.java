@@ -30,11 +30,15 @@ ageIterator.Next();
         System.out.println("++++++++++++++++++++++");
         ageIterator.First();
 
-
-        do{
+        while(!ageIterator.isDone()){
             System.out.println(Or1.Employees.get(ageIterator.iteratorIndex).Name);
             ageIterator.Next();
-        }while (!ageIterator.isDone());
+
+
+
+        }
+
+
 
 
     }
