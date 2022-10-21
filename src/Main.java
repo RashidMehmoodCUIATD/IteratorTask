@@ -19,23 +19,31 @@ public class Main {
 
         //testing Age Iterator
         OrganizationAgeIterator ageIterator=Or1.GetAgeIterator();
-        System.out.println(Or1.Employees.get(ageIterator.iteratorIndex).Name);
+        MarketingEmployeesIterator markIter=Or1.GetMarketingPeople();
+        //System.out.println(Or1.Employees.get(ageIterator.iteratorIndex).Name);
 
-        ageIterator.First();
-        System.out.println(Or1.Employees.get(ageIterator.iteratorIndex).Name);
-ageIterator.Next();
-        System.out.println(Or1.Employees.get(ageIterator.iteratorIndex).Name);
+//        ageIterator.First();
+//        System.out.println(Or1.Employees.get(ageIterator.iteratorIndex).Name);
+//ageIterator.Next();
+//        System.out.println(Or1.Employees.get(ageIterator.iteratorIndex).Name);
+//
+//
+//        System.out.println("++++++++++++++++++++++");
+//        ageIterator.First();
+
+//        while(!ageIterator.isDone()){
+//            System.out.println(Or1.Employees.get(ageIterator.iteratorIndex).Name);
+//            ageIterator.Next();
+//
+//
+//
+//        }
 
 
-        System.out.println("++++++++++++++++++++++");
-        ageIterator.First();
-
-        while(!ageIterator.isDone()){
-            System.out.println(Or1.Employees.get(ageIterator.iteratorIndex).Name);
-            ageIterator.Next();
-
-
-
+        System.out.println("---------- MarketingPeople----------");;
+        while (!markIter.isDone()){
+            System.out.println(markIter.employees.get(markIter.indexForIterator).Name);
+            markIter.Next();
         }
 
 

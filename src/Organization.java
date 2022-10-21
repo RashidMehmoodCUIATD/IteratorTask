@@ -6,7 +6,12 @@ public class Organization {
 
 
      public OrganizationAgeIterator GetAgeIterator(){
-        return new OrganizationAgeIterator(this);
+
+         return new OrganizationAgeIterator(this);
+    }
+    public MarketingEmployeesIterator GetMarketingPeople(){
+
+        return new MarketingEmployeesIterator(this);
     }
 }
 
