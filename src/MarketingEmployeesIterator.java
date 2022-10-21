@@ -16,9 +16,17 @@ public MarketingEmployeesIterator(Organization orgToWorkON){
         {indexForIterator++;  }
     }
     public void Next(){
-    if(!isDone()){ indexForIterator++;
+    if(indexForIterator>employees.size()-1){
+        throw new ArrayIndexOutOfBoundsException("No more Elements");
+    }
+        indexForIterator++;
+
+
+        if(!isDone()){
         while(!(employees.get(indexForIterator).Department=="Marketing"))
-       {indexForIterator++;  }}
+        {
+            if(!isDone()){
+            indexForIterator++;  }}}
 
     }
 
@@ -26,7 +34,7 @@ public MarketingEmployeesIterator(Organization orgToWorkON){
 
     public boolean isDone(){
 
-        if(indexForIterator<=employees.size()-1)
+        if(indexForIterator<employees.size())
         {return false;}
         else {return true;}
 

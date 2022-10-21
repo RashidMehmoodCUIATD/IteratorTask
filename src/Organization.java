@@ -3,7 +3,9 @@ import java.util.ArrayList;
 public class Organization {
     public ArrayList<Employee> Employees=new ArrayList<>();
 
-
+public OrganizationEmployeesIterator GetIterator(){
+    return  new OrganizationEmployeesIterator(this);
+}
 
      public OrganizationAgeIterator GetAgeIterator(){
 

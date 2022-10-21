@@ -12,9 +12,9 @@ public class OrganizationAgeIterator {
         if (!isDone()) {
             iteratorIndex++;
             while (employees.get(iteratorIndex).Age < 36) {
-                if (!isDone()) {
-                    iteratorIndex++;
-                }
+                if(!isDone()){
+                    iteratorIndex++;}
+
             }
         }
     }
